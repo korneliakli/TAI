@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.tai.get_pi_service.GetPiServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.232 s - in com.tai.get_pi_service.GetPiServiceApplicationTests
