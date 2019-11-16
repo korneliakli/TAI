@@ -1,0 +1,11 @@
+sudo docker image build -t gete_img .
+sudo docker image build -t getpi_img .
+sudo docker image build -t getepluspi_img .
+
+sudo docker-compose up
+
+sudo docker network create epluspi_net
+sudo docker container run --network epluspi_net --name getpi -p 8081:8081 -d getpi_img
+sudo docker container run --network epluspi_net --name gete -p 8082:8082 -d gete_img
+sudo docker container run --network epluspi_net --name getepluspi -p 8083:8083 -d geteplus_img
+
