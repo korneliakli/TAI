@@ -1,25 +1,25 @@
 version: "3"
 services:
-  epluspi:
-    image: getepluspi
+  getepluspi:
+    image: getepluspi_img
     ports:
-      - "8081:8081"
+      - "8083:8083"
     networks:
       - epluspi_net
     depends_on:
-      - pi
-      - e
+      - getpi
+      - gete
 
-  pi:
-   image: getpi
+  getpi:
+   image: getpi_img
    ports:
      - "8081:8081"
    networks:
      - epluspi_net
 
 
-  e:
-    image: gete
+  gete:
+    image: gete_img
     ports:
       - "8082:8082"
     networks:
